@@ -49,7 +49,6 @@ class GifsRemoteMediator(
             }
 
             val response = gifApi.getAllGifs(page = currentPage, perPage = GIFS_PER_PAGE).data
-            Log.e("RESPONSE", response.toString())
             val endOfPaginationReached = response.isEmpty()
 
             val prevPage = if (currentPage == 0) null else currentPage - 20

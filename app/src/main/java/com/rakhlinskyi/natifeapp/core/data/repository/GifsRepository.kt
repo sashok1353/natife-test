@@ -12,7 +12,9 @@ import com.rakhlinskyi.natifeapp.core.data.remote.GifApi
 import com.rakhlinskyi.natifeapp.core.utils.Constants.GIFS_PER_PAGE
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 @OptIn(ExperimentalPagingApi::class)
 class GifsRepository @Inject constructor(
     private val gifApi: GifApi,
